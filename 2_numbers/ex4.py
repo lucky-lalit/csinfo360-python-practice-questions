@@ -4,3 +4,15 @@
 # Example:
 # Input: 4521
 # Output: 4
+
+# count = 0
+inp_num = input("Enter the number: ")
+print(len(inp_num))
+# # # for i in
+# a=len(inp_num)
+# print(a)
+
+# inp_split = inp_num.split()
+# print(inp_split)
+# a= inp_num[-1]
+# print(inp_num.index(a))
