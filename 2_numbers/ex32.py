@@ -7,10 +7,14 @@
 inp_num_start = int(input("Enter the number from: "))
 inp_num_stop = int(input("Enter the number to: "))
 
+count = 0
 for i in range(inp_num_start, inp_num_stop + 1):
     for j in range(i + 1):
         if j * j == i:
-            print(j * j, end=" ")
+            if count > 0:
+                print(', ',end = '')
+            print(j * j, end="")
+            count = count +1
             break
     # if i == math.sqrt(i)*math.sqrt(i):
     # print(i)
