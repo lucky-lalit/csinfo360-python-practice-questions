@@ -3,3 +3,25 @@
 # Example:
 # Input: 1 to 50
 # Output: 12, 18, 20, 24, 30, 36, 40, 42, 48
+
+inp_num_start = int(input("Enter the number from: "))
+inp_num_stop = int(input("Enter the number to: "))
+
+for i in range(inp_num_start, inp_num_stop + 1):
+    sum = 0
+    # print('debug0',i)
+    # print(i)
+    for j in range(1, i // 2 + 1):
+        # print(j)
+        if i % j == 0:
+            # print(j)
+            sum = sum + j
+            # print('debug2',sum)
+    # print('debug3',sum)
+    if sum > i:
+        print(i, end=" ")
+        # if i % 2 == 1:
+        #     print('found odd')
+        #     break
+
+# print(1%1)
